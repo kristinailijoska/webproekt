@@ -3,7 +3,23 @@
     <meta charset="utf-8">
     <title>My web</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
     <style>
+         h1{
+            font-family: sans-serif;
+            text-align: center;
+            color: gray;
+            margin: 30px 0 50px;
+        }
+        .gallery{
+            margin: 10px 60px;
+        }
+        .gallery img{
+            
+            padding: 5px;
+
+        }
         .header {
   background-image: none;
   background-repeat: no-repeat;
@@ -13,7 +29,7 @@
 }
 
         body {
-            background-image: url(home.jpg.png) ;
+           
             margin: 0;
         }
         
@@ -73,14 +89,7 @@
         .topnav .search-container{
             float:right;
         }
-        img {
-            display: block;
-            border:5px solid #555;
-            width:60%;
-            height:600px;
-            margin-left:auto;
-            margin-right:auto;
-        }
+        
         
         .topnav input[type=text]{
             padding: 6px;
@@ -140,8 +149,16 @@
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
     </div>
-    <p> </p>
-    <p> </p>
+    <div class="gallery"></div>
+    <h1>Places</h1>
+    <a href="images/a.jpg"  data-lightbox="g" ><img src="images/a-small.png" width="300" height="250"></a>
+        <a href="images/c.jpg"data-lightbox="g"><img src="images/c-small.png" width="300" height="250"></a>
+        <a href="images/d.jpg"data-lightbox="g"><img src="images/d-small.png" width="300" height="250"></a>
+        <a href="images/e.jpg"data-lightbox="g"><img src="images/e-small.png" width="300" height="250"></a>
+        <a href="images/f.jpg"data-lightbox="g"><img src="images/f.jpg" width="300" height="250"></a>
+        <a href="images/g.jpg"data-lightbox="g"><img src="images/g.jpg" width="300" height="250"></a>
+        <a href="images/h.jpg"data-lightbox="g"><img src="images/h.jpg" width="300" height="250"></a>
+        <a href="images/i.jpg"data-lightbox="g"><img src="images/i.jpg" width="300" height="250"></a>
     
     </div>
 </body>
