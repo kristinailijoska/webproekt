@@ -14,6 +14,14 @@
 }
 
         body {
+            background-image: url(instagram1.jpg);
+            
+  background-color: #cccccc;
+  height: 1700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
             
             margin: 0;
         }
@@ -161,9 +169,10 @@
             
             var today = new Date();
              var dd = String(today.getDate()).padStart(2, '0');
-             var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+             var mm = String(today.getMonth() + 1).padStart(2, '0'); 
              var yyyy = today.getFullYear();
-              today = dd + '.' + mm + '.' + yyyy;
+             var hour=today.getTime
+              today = dd + '.' + mm + '.' + yyyy+ ':'+hour;
             
            
              var comments=document.querySelector('.center #comments');
@@ -177,7 +186,7 @@ function typeComment1()
             
             var today = new Date();
             var dd = String(today.getDate()).padStart(2, '0');
-            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+            var mm = String(today.getMonth() + 1).padStart(2, '0'); 
             var yyyy = today.getFullYear();
              today = dd + '.' + mm + '.' + yyyy; 
             var comments1=document.querySelector('.center #comments1');
@@ -191,7 +200,7 @@ function typeComment2()
             
             var today = new Date();
             var dd = String(today.getDate()).padStart(2, '0');
-            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+            var mm = String(today.getMonth() + 1).padStart(2, '0'); 
             var yyyy = today.getFullYear();
            today = dd + '.' + mm + '.' + yyyy;
             var list_item = document.createElement ("l1");
@@ -229,37 +238,37 @@ window.addEventListener("load",start,false);
     <h2 class="text">Gallery</h2>
     <div class="center">
     <ul id="lista">  
-        <li id="slika"><img src="k1.jpg" alt="slika1" height="360" width="600">
-        <p><input id="comment" type="text" placeholder="Comment"><input id="button" type="button" value="post">
+        <div><img src="k1.jpg" alt="slika1" height="360" width="600">
+        <p><input id="comment" type="text" placeholder="Enter your comment here"><input id="button" type="button" value="enter">
             <label id="like"><i class="fa fa-heart"></i></label><label id="number">0</label></p>
             <details>
-           <summary>Comments</summary> 
+           <summary>Tap to see coments</summary> 
            <ul id="comments"></ul>
            </details>
-         </li>
+        </div>
 
 
 
-         <li id="slika"><img src="k2.jpg" alt="slika1" width="450" height="500">
-            <p><input id="comment1" type="text" placeholder="Comment"><input id="button1" type="button" value="post">
+         <div><img src="k2.jpg" alt="slika1" width="450" height="500">
+            <p><input id="comment1" type="text" placeholder="Enter your comment here"><input id="button1" type="button" value="enter">
                 <label id="like1"><i class="fa fa-heart"></i></label><label id="number1">0</label></p>
                 
                 <details>
-                    <summary>Comments</summary> 
+                    <summary>Tap to see coments</summary> 
                     <ul id="comments1"></ul>
                     </details>
-               </li>
+         </div>
 
 
 
-               <li id="slika"><img src="k3.jpg" alt="slika1" width="600" height="360">
-                <p><input id="comment2" type="text" placeholder="Comment"><input id="button2" type="button" value="post">
+               <div> <img src="k3.jpg" alt="slika1" width="600" height="360">
+                <p><input id="comment2" type="text" placeholder="Enter your comment"><input id="button2" type="button" value="enter">
                     <label id="like2"><i class="fa fa-heart"></i></label><label id="number2">0</label></p>
                     <details>
-                        <summary>Comments</summary> 
+                        <summary>Tap to see coments</summary> 
                         <ul id="comments2"></ul>
                         </details>
-                   </li>
+                </ul>
                  
          </ul>
     </div> 
