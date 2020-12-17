@@ -124,6 +124,61 @@
             background-color: burlywood;
             color: white;
         }
+        html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
   
     </style>
 
@@ -155,8 +210,82 @@
     <h3>Blindspot</h3>
     <a href="https://www.imdb.com/title/tt4474344/"><img src="blindspot.jpg" width="200" height="250"></a>
     <br>
-    <br>
-    <h3>Juzni vetar</h3>
-    <a href="https://www.imdb.com/title/tt10952900/"><img src="juzni.jpg" width="200" height="250"></a>    
+    <h2>CAST</h2>
+
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="janedoe1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jaimie Alexander</h2>
+        <p class="title">Actress</p>
+        <p>Her name in the seria is Jane Doe.And she has the main row</p>
+        <br>
+        <br>
+        
+        <p><a href="hhttps://www.imdb.com/name/nm0822982/?ref_=tt_cl_t1"><button class="button">More About</button></a></p>
+      </div>
     </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="kurt.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Sullivan Stapleton</h2>
+        <p class="title">Acter</p>
+    
+        <p>His name in the seria is Kurt Weler. He is the FBI agent.</p>
+        <p><a href="https://en.wikipedia.org/wiki/Audrey_Esparza"><button class="button">More About</button></a></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="zapata1.jpg" alt="Zapata" style="width:100%">
+      <div class="container">
+        <h2>Audrey Esparza</h2>
+        <p class="title">Actress</p>
+        <p>Her name in the seria is Natasha Zapata.She is FBI agent</p>
+        
+        <p><a href="https://en.wikipedia.org/wiki/Audrey_Esparza"><button class="button">More About</button></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+    <br>
+    <h3>BlackList</h3>
+    <a href="https://www.imdb.com/title/tt2741602/"><img src="blacklist.jpg" width="200" height="300"></a>    
+    </div>
+    <br>
+    <h2>CAST</h2>
+    
+    <div class="column">
+        <div class="card">
+          <img src="elizabeth.jpg" alt="Eli" style="width:100%">
+          <div class="container">
+            <h2>Megan Boone</h2>
+            <p class="title">Actress</p>
+            <p>Her name in the seria is Elizabeth Keen.Keen is a special agent and profiler with the FBI on Harold Cooper's team.</p>
+            
+            <p><a href="https://en.wikipedia.org/wiki/Megan_Boone"><button class="button">More About</button></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="reymond1.jpg" alt="Reymond" style="width:100%">
+          <div class="container">
+            <h2>James Spader</h2>
+            <p class="title">Acter</p>
+            <p>Raymond "Red" Reddington: A master criminal turned confidential informant for the FBI, who is later apparently revealed to be Elizabeth Keen's biological father.</p>
+            <br>
+            <br>
+            <p><a href="https://www.imdb.com/name/nm0000652/?ref_=tt_cl_t1"><button class="button">More About</button></a></p>
+          </div>
+        </div>
+      </div>
 </body>

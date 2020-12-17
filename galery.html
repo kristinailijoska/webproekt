@@ -126,6 +126,10 @@
             color: black;
             text-align: center;
         }
+        summary{
+            color:#333;
+
+        }
        
         
   
@@ -172,8 +176,8 @@
              var dd = String(today.getDate()).padStart(2, '0');
              var mm = String(today.getMonth() + 1).padStart(2, '0'); 
              var yyyy = today.getFullYear();
-             var hour=today.getTime
-              today = dd + '.' + mm + '.' + yyyy+ ':'+hour;
+             
+              today = dd + '.' + mm + '.' + yyyy;
             
            
              var comments=document.querySelector('.center #comments');
@@ -181,6 +185,8 @@
              list_item.innerHTML ="<p>"+ comment.value + Array(30).fill('\xa0').join('') +" <label style='font-size: 0.7em'>" + today +  "</label>"+ "</p>";
                comments.append(list_item); 
                comment.value="";
+               
+
 }
 function typeComment1()
         {
@@ -212,6 +218,7 @@ function typeComment2()
 }
         }
 window.addEventListener("load",start,false);
+
     </script>
     
 
@@ -240,14 +247,16 @@ window.addEventListener("load",start,false);
     <h2 class="text">Gallery</h2>
     <div class="center">
     <ul id="lista">  
-        <div><img src="k1.jpg" alt="slika1" height="360" width="600">
+        <div id="result"><img src="k1.jpg" alt="slika1" height="360" width="600">
         <p><input id="comment" type="text" placeholder="Enter your comment here"><input id="button" type="button" value="enter">
             <label id="like"><i class="fa fa-heart"></i></label><label id="number">0</label></p>
             <details>
            <summary>Tap to see coments</summary> 
            <ul id="comments"></ul>
            </details>
+           <br> <br>
         </div>
+        
 
 
 
@@ -259,6 +268,7 @@ window.addEventListener("load",start,false);
                     <summary>Tap to see coments</summary> <br>
                     <ul id="comments1"></ul><br>
                     </details>
+                    <br> <br>
          </div>
 
 
